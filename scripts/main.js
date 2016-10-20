@@ -1,4 +1,5 @@
 var editable_title = $('#editable_title')
+var editable_note = $('#editable_note')
 
 editable_title.on('input', function() {
   return filter_newlines(editable_title);
