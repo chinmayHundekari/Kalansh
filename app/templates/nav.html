@@ -1,0 +1,8 @@
+{% extends index.html %}
+
+{% block nav %}
+    {% for note in notes %}
+        {{note.title}}<br>
+    {% endfor %}
+{% endblock %}
+

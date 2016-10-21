@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>{{title}}</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1 id="logo">{{user.name}}<h1>
+    </header>
+    <nav id="buttons_nav">
+    </nav>
+    <nav id="notebook_nav">
+    {% block nav %}{% endblock %}
+    </nav>
+    <main>
+    {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <address>
+            By <a href="mailto:chinmay.hundekari@gmail.com">Chinmay Hundekari</a>
+        </address>
+        <p>Copyright Chinmay Hundekari 2016</p>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/main.js"> </script>
+</body>
+</html>
+
